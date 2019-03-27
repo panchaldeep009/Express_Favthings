@@ -1,0 +1,105 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(19, 5, 5);
+    color: rgb(240, 240, 240);
+    font-family: 'Montserrat', sans-serif;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .welcome_message{
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            padding: 50px;
+            font-weight: 100;
+            font-size: 35px;
+            text-shadow: 5px 5px 10px rgb(107, 0, 0);
+        }
+        background-image: url('https://images5.alphacoders.com/443/443997.jpg');
+        background-size: cover;
+    }
+    main{
+        width: 100%;
+        max-width: 1020px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        @media only screen and (max-width: 600px) {
+            grid-template-columns: auto;
+        }
+        .wine{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 90%;
+            margin-left:  5%;
+            border-radius: 10px;
+            border: 2px solid wheat;
+            img{
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .info{
+                padding: 10px;
+            }
+            @media only screen and (max-width: 600px) {
+                flex-direction: row;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        [type='button'] {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: rgb(150, 0, 0);
+            cursor: pointer;
+            margin: 10px;
+        }
+        .wineInfo{
+            display: flex;
+            border-radius: 10px;
+            border: 2px solid wheat;
+            width: 90%;
+            max-width: 1000px;
+            img{
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+            }
+            .info{
+                padding: 10px;
+                p{
+                    padding: 5px 10px;
+                }
+                .price{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

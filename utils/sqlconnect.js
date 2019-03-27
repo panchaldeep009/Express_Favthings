@@ -1,6 +1,6 @@
-var config = require('../config');
+var { sql } = require('../config');
 var mysql = require('mysql');
 
-const connect = mysql.createConnection(config.sql)
+const connect = mysql.createConnection(sql)
 
 module.exports = connect;

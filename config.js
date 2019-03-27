@@ -4,7 +4,7 @@ const config = {
         password: "",
         host: "localhost",
         port: "3306",
-        database: "db_marvel"
+        database: "db_wines"
     }
 }
 
